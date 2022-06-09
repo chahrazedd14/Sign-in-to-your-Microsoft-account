@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.form-signin {
+  width: 450px;
+  max-width: 450px;
+  padding: 120px 80px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  box-shadow: 5px 5px 20px rgb(203 205 211 / 10%);
+}
+
+img[src="https://i.imgur.com/Le4rjWl.png"] {
+  height: 148px;
+  width: 159px;
+  margin-bottom: 50px;
+}
+
+p {
+  /* text-align: left; */
+  color: #191717;
+  font-weight: 500;
+}
+
+.btn.btn-lg.btn-primary.btn-block {
+  background: #0d2146;
+  color: white;
+  font-size: 16px;
+  padding: 14px;
+  width: 20vw;
+  margin-bottom: 0px;
+  border:#0d2146;
+}
+
+.btn.btn-lg.btn-primary.btn-block:hover {
+  padding: 14px;
+  width: 20vw;
+  margin-bottom: 0px;
+  background-color: #105270;
+  color: #ffffff;
+  font-size: 16px;
+  border-color: #105270;
+}
+
+
+#logo1 {
+  position: relative;
+  bottom: 63px;
+}
+*:focus {
+  outline: none- !important;
+}
+
+
+

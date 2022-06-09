@@ -1,0 +1,102 @@
+.DropDown {
+    position: relative;
+    z-index: 50;
+}
+
+.DropDown .preview {
+    background: #f3f4fc;
+    padding: 10px 14px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 124px;
+    height: 54px;
+}
+
+.DropDown.open .preview {
+
+}
+
+.DropDown .preview p {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 4px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.DropDown .preview .arrow {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.1s ease-in-out;
+}
+
+.DropDown.open .preview .arrow {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.DropDown .container-wrapper {
+    position: absolute;
+    right: 0;
+}
+.DropDown .container-wrapper .backdrop{
+    position: fixed;
+    left: -100vw;
+    right: -100vw;
+    top: -100vh;
+    bottom: -100vh;
+    z-index: 60;
+}
+
+.DropDown .dropdown-container {
+    min-height: 4rem;
+    position: relative;
+    text-align: center;
+    display: none;
+    border-radius: 4px;
+    background: #f7fafc;
+    padding: 4px 0px;
+    max-height: calc(100vh - 15rem);
+    z-index: 61;   
+    min-width: 124px;
+    width: 100%;
+
+}
+
+.DropDown.open .dropdown-container {
+    display: block;
+
+}
+
+.DropDown .dropdown-container .item-dropdown {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.DropDown .dropdown-container .item-dropdown:hover,
+.DropDown .dropdown-container .item-dropdown:focus {
+    background: #f3f4fc;
+}
+
+.DropDown .dropdown-container .item-dropdown p {
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.DropDown .dropdown-container .item-dropdown.selected {
+    background: #cdced5;
+}
